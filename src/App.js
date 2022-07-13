@@ -3,73 +3,69 @@ import './App.css';
 
 function App() {
 
-  // Array
+  let data=
+  [
+    {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
+    }
+  ];
 
-  //let arr = [1,2,3,4,5,6,7]
+  let fdata = data.filter((v,i) => v.expiry >= 2022  && v.status === true);
+  console.log(fdata);
 
-  //copy
-
-  //let arr1 = [...arr];
-  //console.log(...arr1);
-
-  //1 2 3 4 5 6 7  line 13
-
-
-  //merging
-
-  //let arr = [1,2,3,4,5,6,7];
-  //let arr2 = [9,10];
-  //let ans = [...arr, ...arr2];
-  //console.log(ans);  //[1, 2, 3, 4, 5, 6, 7, 9, 10]
-
-
-  // destructuring
-  // let arr = [1,2,3,4,5,6];
-  // const [a,b,c,d,e,f] = arr;
-  // console.log(a,f); 
-
-  //1 6
-
-
-  // ======================Object======================
-
-  // copy
-
-  // let obj = {id: 1010 , name: 'aushal'};
-
-  // let obj1 = {...obj};
-  // console.log(obj1);  //{id: 1010, name: 'aushal'}
-
-  //merge obj
-  // let obj2 = {id: 1020 , place: 'surat'};
-  // let ans = {...obj2, ...obj2};
-  // console.log(ans);  //{id: 1020, place: 'surat'}
-
-
-  //destructuring
-
-  // let obj = {id: 1030 , name: 'aushal'};
-  // let {id , name}= obj;
-  // console.log(name , obj .id);
-
-  // aushal 1030
+  let totalprice = fdata.reduce((acc, v, i) => acc + v.price, 0)
+  console.log(totalprice
+    );
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {
+        fdata.map((v,i) =>{
+          return(
+            <div key = {i}>
+              <h1>{v.name}</h1>
+              <h4>{v.price}</h4>
+            </div>
+          )
+        })
+      }
     </div>
   );
 }
