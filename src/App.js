@@ -41,31 +41,30 @@ function App() {
         status: true
       },
     ]
-      let mdata = data.filter((v, i) => v.status === true);
-      console.log(mdata);
 
-      let totalsalary = mdata.reduce((acc, v, i) => acc + v.salary + v.bonus, 0)
-      console.log(totalsalary);
-      
+  let edata = data.filter((v, i) => v.status === true);
+  console.log(edata);
+
+   let totalsalary = edata.reduce((acc, v, i) => acc + v.salary + v.bonus , 0);
+   console.log(totalsalary);
+
+
   return (
     <div>
       {
-        data.map((v, i) => {
+        edata.map((v, i) => {
           return (
             <div key={i}>
               <h1>{v.name}</h1>
-              <h4>{v.salary}</h4>
-              <h4>{v.bonus}</h4>
-              <h4>{v.salary + v.bonus}</h4>
-              <h4>total</h4>
-              <h4>{v.status.tostring()}</h4>
+              <h3>{v.salary}</h3>
+              <h3>{v.bonus}</h3>
+              <h1>{v.salary + v.bonus}</h1>
+              <h3>{v.status.toString()}</h3>
             </div>
           )
         })
       }
-      <div>
-        <h3>total :- {totalsalary}</h3>
-      </div>
+      <h3>total :- {totalsalary}</h3>
     </div>
   );
 }
