@@ -10,4 +10,4 @@ import ClassBasedcountry from './Container/ClassBasedcountry';
     );
   }
 
-  export default App
+  export default App;
