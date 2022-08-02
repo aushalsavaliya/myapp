@@ -2,7 +2,7 @@ import React from 'react';
 import ClassBasedcountry from './Container/ClassBasedcountry';
 
 
-  function App(props) {
+  function App(pros) {
     return (
       <div>
       <ClassBasedcountry/>        

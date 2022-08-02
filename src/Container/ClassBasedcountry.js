@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class ClassBasedDemo extends Component {
+class ClassBasedcountry extends Component {
 
 
     constructor(props){
