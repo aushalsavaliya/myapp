@@ -1,12 +1,12 @@
-import React from "react";
-import ClassBasedcountry from './Container/ClassBasedcountry';
+import React from 'react';
+import FunctionBased from './Container/FunctionBased';
 
-function App (pros) {
-  return(
+function App(props) {
+  return (
     <div>
-      <ClassBasedcountry/>
+      <FunctionBased/>
     </div>
-  )
+  );
 }
 
 export default App;
