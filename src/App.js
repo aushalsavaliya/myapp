@@ -1,5 +1,6 @@
 import React from "react";
-import Cours from "./Container/Cours";
+import Time from "./Container/ClassbaseDEmo/Time";
+// import Cours from "./Container/Cours";
 // import Country from "./Container/Country";
 // import City from "./Container/City";
 // import React from "./Container/React";
@@ -14,7 +15,8 @@ import Cours from "./Container/Cours";
        {/* <React/> */}
        {/* <Fees/> */}
        {/* <React/> */}
-       <Cours />
+       {/* <Cours /> */}
+       <Time/>
     </div>
   );
 }
