@@ -1,5 +1,6 @@
 import React from "react";
-import Time from "./Container/ClassbaseDEmo/Time";
+// import Time from "./Container/ClassbaseDEmo/Time";
+import Timefun from "./Container/Functionbeasd/Timefun";
 // import Cours from "./Container/Cours";
 // import Country from "./Container/Country";
 // import City from "./Container/City";
@@ -16,7 +17,8 @@ import Time from "./Container/ClassbaseDEmo/Time";
        {/* <Fees/> */}
        {/* <React/> */}
        {/* <Cours /> */}
-       <Time/>
+       {/* <Time/> */}
+       <Timefun/>
     </div>
   );
 }
