@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Reactfees from './Fees';
+import Reactfees from '../Fees';
 
 function Cours(props) {
 
