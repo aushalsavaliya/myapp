@@ -1,5 +1,6 @@
 import React from "react";
 import Timer8 from "./Container/ClassbaseDEmo/Timer8";
+import Conter from "./Container/Functionbeasd/Counter/Conter";
 // import Time from "./Container/ClassbaseDEmo/Time";
 // import Timefun from "./Container/Functionbeasd/Timefun";
 // import Cours from "./Container/Cours";
@@ -20,7 +21,8 @@ import Timer8 from "./Container/ClassbaseDEmo/Timer8";
        {/* <Cours /> */}
        {/* <Time/> */}
        {/* <Timefun/> */}
-       <Timer8/>
+       {/* <Timer8/> */}
+       <Conter />
     </div>
   );
 }
